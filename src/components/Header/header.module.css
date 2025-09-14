@@ -1,15 +1,20 @@
+.mainHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    border-bottom: 1px solid rgb(230, 230, 230);
-    width: 100vw;
+    width: 1400px;
+    background-color: #F4F9E2;
 }
 
 .logo {
-    height: 40px;
-    width: 40px;
+    height: 70px;
     margin-left: 2%;
 }
 
@@ -20,10 +25,44 @@
 
 .midButtons {
     justify-content: space-between;
+    margin-left: 5%;
+}
+
+.buttons button {
+    color: rgb(0, 0, 0);
+    background-color: #F4F9E2;
+    border: none;
+    padding: 0em 2em;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 20px;
 }
 
 .rightButtons {
     gap: 10px;
     display: flex;
     margin-right: 5%;
+}
+
+.rightButtons button {
+    background-color: #F9B640;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 1em 2em;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.rightButtons button:hover {
+    background-color: #ffffff;
+    color: #F9B640;
+    border: 1px solid #F9B640;
+    cursor: pointer;
 }

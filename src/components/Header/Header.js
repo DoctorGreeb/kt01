@@ -1,19 +1,30 @@
 import styles from './header.module.css';
-export default function Header() {
+export default function Header(props) {
+  const handleLogoClick = () => {
+    // Простой переход на главную страницу
+    window.location.href = '/';
+  };
   return (
-    <header className={styles.header}>
-      <img src="/logo192.png" alt="Logo" className={styles.logo} />
+    <header className={styles.mainHeader}>
+      <div className={styles.header}>
+        <img 
+          src="./logo copy 1.svg" 
+          alt="Logo" 
+          className={styles.logo}
+          onClick={handleLogoClick}
+        />
       <div className={styles.midButtons}>
         <div className={styles.buttons}>
-          <button>Home</button>
-          <button>About</button>
-          <button>Contact</button>
+          <button>{props.text1}</button>
+          <button>{props.text2}</button>
+          <button>{props.text3}</button>
         </div>
       </div>
       <div className={styles.rightButtons}>
-        <button>Login</button>
-        <button>Sign Up</button>
+        <button>{props.text4}</button>
+      </div>
       </div>
     </header >
   );
+  
 }

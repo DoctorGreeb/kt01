@@ -1,71 +1,113 @@
-.inputText {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    padding: 1em;
-    gap: 2em;
-    border-bottom: 1px solid rgb(230, 230, 230);
-    width: 100vw;
-}
-li {
-    text-align: left;
-}
-
-.input {
-    width: 10%;
-    height: 10%;
-    padding: 0.5em;
-    border: 1px solid rgb(230, 230, 230);
-}
-
-.button {
-    width: 10%;
-    height: 10%;
-    padding: 0.5em;
-    border: 1px solid rgb(230, 230, 230);
-    background-color: rgb(230, 230, 230);
-    cursor: pointer;
-}
-.midText {
-    display: flex;
-    justify-content: space-around;
-    align-items: left;
-    flex-direction: column;
-    padding: 1em;
-    gap: 2em;
-
-    width: 100vw;
-}
-.companyText {
-    font-weight: bold;
-    font-size: 24px;
-}
-.companyDescriptionText {
-    font-size: 14px;
-    width: 10%;
-    text-align: left;
-    width: 50vw;
-}
-.mainMidText {
-    display: flex;
-    justify-content: space-around;
+.body {
+    display: revert;
+    justify-content: space-between;
     align-items: center;
-    padding: 1em;
-    gap: 10em;
-    max-width: 50vw;
-    min-width: 30vw;
+    padding: 0em 0em;
+    gap: 4em;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: auto;
+    min-height: 400px;
+    background-color: #F4F9E2;
+    object-fit: fill;
 }
 
-.midTextRight {
+.mainContent {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 20vw;
-    height: 20vh;
+    gap: 4em;
+    padding: 0em 0;
     
 }
+
+.textContent {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-left: 100px;
+}
+
+.companyText {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+.companyDescriptionText {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.companyDescriptionText p {
+    margin: 0;
+}
+
+.imageContent {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+
 .image {
-    width: 300px;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 968px) {
+    .mainContent {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+    }
+    
+    .textContent {
+        max-width: 100%;
+        align-items: center;
+    }
+    
+    .companyText {
+        font-size: 1.5rem;
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .body {
+        padding: 1em;
+        gap: 2em;
+    }
+    
+    .inputContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .input {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .button {
+        width: 100%;
+    }
+    
+    .inputHeader h2 {
+        font-size: 1.5rem;
+    }
+    
+    .companyText {
+        font-size: 1.3rem;
+    }
 }
