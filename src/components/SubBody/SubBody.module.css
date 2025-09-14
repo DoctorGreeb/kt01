@@ -1,0 +1,42 @@
+.SubBody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    gap: 10em;
+    max-width: 50vw;
+    min-width: 30vw;
+}
+.SubBodyLeft {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20vw;
+    height: 20vh;
+}
+.SubBodyText {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: 1em;
+    gap: 2em;
+    width: 100vw;
+}
+.SubBodyText2 {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: 1em;
+    gap: 2em;
+    width: 100vw;
+    font-weight: 100;
+}
+
+.SubBodyRight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20vw;
+    height: 20vh;
+
+}

@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    width: 100vw;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-left: 2%;
+}
+
+.buttons {
+    gap: 10px;
+    display: flex;
+}
+
+.midButtons {
+    justify-content: space-between;
+}
+
+.rightButtons {
+    gap: 10px;
+    display: flex;
+    margin-right: 5%;
+}
